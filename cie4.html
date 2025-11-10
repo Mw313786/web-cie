@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration.html</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background-color:#f0f4t8;
+display:flex;
+justify-content:center;
+align-items:center;
+height:250vh;
+}
+
+
+form{
+display:flex;
+flex-direction:column;
+}
+
+label{
+color:#555;
+font-size:14px;
+font-weight:bold;
+margin-bottom:5px;
+display:block;
+}
+
+input,select,button{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:4px;
+font-size:14px;
+}
+
+button{
+background-color:#4CAF50;
+color:white;
+border:none;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+padding:12px;
+}
+
+button:hover{
+background-color:#35b088;
+}
+
+</style>
+</head>
+<body>
+ <h2>HTML Forms</h2>
+<form action="/action_page.php">
+<label for="fname">First Name:</label>
+<input type="text"  id="fname" name="fname">
+<label for="lname">Last Name:</label><br>
+<input type="text" id="lname" name="lname" >
+<input type="submit" value="Submit"><br>
+
+<input type="radio" id="html" name="fav-language" value="HTML">
+<label for="html">HTML </label>
+<input type="radio" id="css" name="fav-language" value="CSS">
+<label for="css">CSS</label>
+<input type="radio" id="javascript" name="fav-language" value="javaScript">
+<label for="javascript">JavaScript</label>
+<input type="submit" value="Submit"><br><br>
+
+
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label1 for="vehicle1">I have a bike</label>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label2 for="vehicle2">I have a car</label>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Horse">
+<label3 for="vehicle3">I have a horse</label>
+<input type="submit" value="Submit"><br><br>
+
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="2" multiple>
+<option value="volvo">Volvo</option>
+<option value="mercedise benz">Mercedise Benz</option>
+<option value="land rover">Land Rover</option><br><br>
+<input type="submit" value="Submit"><br><br>
+
+</select>
+
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username"><br>
+<label for="pwd">Password:</label><br>
+<input type="text" id="pwd" name="pwd"><br>
+<input type="submit" value="Submit"><br><br>
+
+<label for="favcolor">select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+<input type="submit" value="Submit"><br><br>
+
+<label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday">
+<input type="submit" value="Submit"><br><br>
+
+<label for="email">Enter your email:</label>
+<input type="email" id="email" name="email"><br>
+<input type="submit" value="Submit"><br><br>
+
+<label for="quantity">Quality (between 1 and 99):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="99"><br>
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
